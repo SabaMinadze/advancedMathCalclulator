@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="bigBox">
+        <div class="box">
+            <form action="result/" method="post" id="cont">
+                {% csrf_token %}
+                <h1 class="hh">Pythagorean calculator</h1>
+                <div class="bla">
+                <input type="text" name="a" placeholder="Enter a" class="inp" required />
+                <input type="text" name="b" placeholder="Enter b" class="inp" required />
+                <input type="submit" class="sub" name="save message">
+                </div>
+            </form>
+        </div>
+
+        <div class="box">
+            <form action="heron/" method="post" id="cont">
+                {% csrf_token %}
+                <h1 class="hh">Heron's formula</h1>
+                <div class="bla">
+                <input type="text" name="a1" placeholder="Enter a1" class="inp" required />
+                <input type="text" name="b1" placeholder="Enter b1" class="inp" required />
+                <input type="text" name="c1" placeholder="Enter c1" class="inp" required />
+                <input type="submit" class="sub" name="save message">
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <div class="box2">
+        <form action="discriminant/" method="post" id="cont">
+            {% csrf_token %}
+            <h1 class="hh">discriminant calculator</h1>
+            <div class="bla">
+            <input type="text" name="a2" placeholder="Enter a1" class="inp" required />
+            <input type="text" name="b2" placeholder="Enter b1" class="inp" required />
+            <input type="text" name="c2" placeholder="Enter c1" class="inp" required />
+            <input type="submit" class="sub" name="save message">
+            </div>
+        </form>
+    </div>
+
+    <style>
+        body{
+        background-color: rgb(19, 89, 151);
+    }
+
+    .bigBox{
+        display: inline-flex;
+    }
+    
+    
+    .box{
+        height:250px;
+        width: 540px;
+        background-color: chocolate;
+        margin-left: 140px;
+        border-radius: 10px;
+        margin-top: 70px;
+    }
+    
+    .inp{
+        height: 60px;
+        width: 180px;
+        border-radius: 10px;
+        font-size: 30px;
+        background-color: rgb(0, 0, 0);
+        color: aliceblue;
+    
+    }
+    
+    .sub{
+        height: 60px;
+        width: 111px;
+        border-radius: 10px;
+        font-size: 30px;
+        background-color: rgb(0, 0, 0);
+        color: aliceblue;
+    
+    }
+    
+    .hh{
+        text-align: center;
+    }
+    
+    .bla{
+        text-align: center;
+    }
+
+    .box2{
+        height:250px;
+        width: 540px;
+        background-color: chocolate;
+        margin-left: 450px;
+        border-radius: 10px;
+        margin-top: 70px;
+
+    }
+    
+    
+    
+    </style>
+
+
+</body>
+</html>
