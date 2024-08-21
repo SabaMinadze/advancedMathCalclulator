@@ -1,0 +1,9 @@
+{
+    "builds": [
+      { "src": "advancedMathCalclulator/wsgi.py", "use": "@vercel/python" }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "advancedMathCalclulator/wsgi.py" }
+    ]
+  }
+  
